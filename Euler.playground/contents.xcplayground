@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false' last-migration='0830'>
+    <pages>
+        <page name='1 - Multiples of 3 and 5'/>
+        <page name='2 - Even Fibonacci numbers'/>
+        <page name='3 - Largest prime factor'/>
+        <page name='4 - Largest palindrome product'/>
+        <page name='5 - Smallest multiple'/>
+        <page name='6 - Sum square difference'/>
+        <page name='7 - 10,001st prime'/>
+        <page name='8 - Largest product in a series'/>
+        <page name='9 - Special Pythagorean Triplet'/>
+        <page name='10 - Summation of primes'/>
+        <page name='11 - Largest Product in a Grid'/>
+        <page name='12 - Highly divisible triangular number'/>
+        <page name='13 - Large sum'/>
+        <page name='14 - Longest Collatz sequence'/>
+        <page name='16 - Power digit sum'/>
+    </pages>
+</playground>

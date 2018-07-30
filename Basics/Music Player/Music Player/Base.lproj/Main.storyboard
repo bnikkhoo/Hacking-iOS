@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ka8-P7-dkV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TDC-q0-LHN">
+            <objects>
+                <viewController id="ka8-P7-dkV" customClass="ViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mu2-P4-tFT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ae4-Gt-l2J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lDu-f4-hdn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvi-H4-L95">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RBl-yE-Wsi"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Boobies Music Player" id="poa-3m-M1i">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="452-Th-nCf">
+                                            <connections>
+                                                <action selector="play:" destination="ka8-P7-dkV" id="yXj-tF-u0f"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b6y-S2-QO8">
+                                <rect key="frame" x="18" y="64" width="564" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gjx-Ai-H5g"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="adjustVolume:" destination="ka8-P7-dkV" eventType="valueChanged" id="bSc-lv-prV"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Who Knows (Suonho Raw Dub).png" translatesAutoresizingMaskIntoConstraints="NO" id="yde-ZL-tue">
+                                <rect key="frame" x="0.0" y="102" width="600" height="454"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vc-t1-BqU">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eyJ-qY-akA"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="pause" id="bIg-Zr-8kG">
+                                        <connections>
+                                            <action selector="pause:" destination="ka8-P7-dkV" id="p6Q-db-I8n"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bm2-8Z-OVG"/>
+                                    <barButtonItem style="plain" id="OXH-RR-pMW">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="Epu-aP-ZX4">
+                                            <rect key="frame" x="173" y="6.5" width="254" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="adjustScrubber:" destination="ka8-P7-dkV" eventType="valueChanged" id="M2D-Oa-2IK"/>
+                                            </connections>
+                                        </slider>
+                                        <connections>
+                                            <action selector="adjustScrubber:" destination="ka8-P7-dkV" id="Y2F-GT-O4Q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MKp-mH-AX8"/>
+                                    <barButtonItem title="Stop" id="cr2-rb-e8A">
+                                        <connections>
+                                            <action selector="stop:" destination="ka8-P7-dkV" id="Ikr-6l-sw4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b6y-S2-QO8" firstAttribute="leading" secondItem="lDu-f4-hdn" secondAttribute="leadingMargin" id="6FC-mv-A4b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rvi-H4-L95" secondAttribute="trailing" constant="-20" id="9aZ-Ml-9Od"/>
+                            <constraint firstItem="b6y-S2-QO8" firstAttribute="top" secondItem="rvi-H4-L95" secondAttribute="bottom" id="GJo-OV-1Tz"/>
+                            <constraint firstItem="b6y-S2-QO8" firstAttribute="trailing" secondItem="lDu-f4-hdn" secondAttribute="trailingMargin" id="KeJ-5O-bD3"/>
+                            <constraint firstItem="Ae4-Gt-l2J" firstAttribute="top" secondItem="6Vc-t1-BqU" secondAttribute="bottom" id="OdZ-8o-euc"/>
+                            <constraint firstItem="rvi-H4-L95" firstAttribute="leading" secondItem="lDu-f4-hdn" secondAttribute="leadingMargin" constant="-20" id="T4c-jA-I6p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Vc-t1-BqU" secondAttribute="trailing" constant="-20" id="Vcg-z0-bnb"/>
+                            <constraint firstItem="yde-ZL-tue" firstAttribute="top" secondItem="b6y-S2-QO8" secondAttribute="bottom" constant="8" id="ahM-fd-qlC"/>
+                            <constraint firstItem="6Vc-t1-BqU" firstAttribute="leading" secondItem="lDu-f4-hdn" secondAttribute="leadingMargin" constant="-20" id="nOa-DJ-rs9"/>
+                            <constraint firstItem="rvi-H4-L95" firstAttribute="top" secondItem="Mu2-P4-tFT" secondAttribute="bottom" id="o6N-zd-NNy"/>
+                            <constraint firstItem="yde-ZL-tue" firstAttribute="leading" secondItem="lDu-f4-hdn" secondAttribute="leadingMargin" constant="-20" id="sS1-bJ-gb0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yde-ZL-tue" secondAttribute="trailing" constant="-20" id="tUK-1D-zDX"/>
+                            <constraint firstItem="6Vc-t1-BqU" firstAttribute="top" secondItem="yde-ZL-tue" secondAttribute="bottom" id="zWo-5e-exe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrubberSlider" destination="Epu-aP-ZX4" id="FG3-qp-GHH"/>
+                        <outlet property="volumeSlider" destination="b6y-S2-QO8" id="VaV-x8-eC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3v4-t7-3PA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="406"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Who Knows (Suonho Raw Dub).png" width="300" height="300"/>
+    </resources>
+</document>

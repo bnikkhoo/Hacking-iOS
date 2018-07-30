@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bruce_Lee_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lp2-2C-gav">
+                                <rect key="frame" x="100" y="20" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="WSn-bD-wt6"/>
+                                    <constraint firstAttribute="height" constant="400" id="kyD-Wh-gZf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwD-GZ-v7j">
+                                <rect key="frame" x="100" y="463" width="400" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8oM-AK-hYJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="XBr-6X-dg7"/>
+                                    <constraint firstAttribute="width" constant="103" id="eYh-8M-Pbn"/>
+                                    <constraint firstAttribute="width" constant="159" id="lY5-HY-K8p"/>
+                                    <constraint firstAttribute="width" constant="400" id="s6d-n8-MpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="27"/>
+                                <state key="normal" title="Start kicking some ass!">
+                                    <color key="titleColor" red="1" green="0.020532956710662131" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XBr-6X-dg7"/>
+                                        <exclude reference="eYh-8M-Pbn"/>
+                                        <exclude reference="lY5-HY-K8p"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ye4-SF-dc4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.93725490196078431" blue="0.64313725490196083" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RwD-GZ-v7j" firstAttribute="top" secondItem="Lp2-2C-gav" secondAttribute="bottom" constant="43" id="MdI-vd-xbb"/>
+                            <constraint firstItem="Lp2-2C-gav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oxq-Xp-Qhk"/>
+                            <constraint firstItem="RwD-GZ-v7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sfv-HH-oFO"/>
+                            <constraint firstItem="RwD-GZ-v7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZX3-0t-aCn"/>
+                            <constraint firstItem="Lp2-2C-gav" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dhX-6p-4tV"/>
+                            <constraint firstItem="RwD-GZ-v7j" firstAttribute="top" secondItem="Lp2-2C-gav" secondAttribute="bottom" constant="20" id="v5m-OR-KyW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZX3-0t-aCn"/>
+                                <exclude reference="v5m-OR-KyW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="image" destination="Lp2-2C-gav" id="j0i-uo-IKd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frame1.png" width="141" height="141"/>
+    </resources>
+</document>
